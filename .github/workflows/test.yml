@@ -37,7 +37,9 @@ jobs:
           ls
   run-windows-commands:
     runs-on: windows-latest
+    needs: ["shell-command-action"]
     steps:
       - name: Directory Powershell
         run: pwd
+
       
